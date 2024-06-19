@@ -4,7 +4,7 @@ from utilities.utilities import Utilities
 
 class Lender_dashboard:
     def __init__(self, driver):  # Corrected the constructor method
-        print("Lender dashboard calling")
+        print("Lender dashboard calling  shsh")
         self.driver = driver
         self.Faircent_double_open_locator = (By.XPATH, "//a[@href='/fsigp/investView']")
         self.Faircent_12Month_plan_locator = (By.XPATH, "//label[text()='12 Month Plan']")
