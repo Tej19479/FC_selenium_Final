@@ -12,6 +12,11 @@ from selenium.webdriver.edge.service import Service as EdgeService
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.chrome.options import Options
+import os
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
 
 driver = None
 
@@ -33,14 +38,17 @@ driver = None
 #     driver.close()
 
 #
-@pytest.fixture(autouse=True)
+@pytest.fixture(autouse=True, scope="class")
 def setup(request, browser):
     print("rrrrrrrrrrrrrrrr", browser)
     global driver
     if browser == "chrome":
-        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+        options = webdriver.ChromeOptions()
+        options.add_argument("--start-maximized")  # Optional: maximize browser window
+        options.add_argument("--disable-extensions")  # Optional: disable extensions
+        driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
 
-        print("chrome lunch")
+        print("Chrome launched")
     elif browser == "firefox":
         driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
         print("firefox")
@@ -51,6 +59,7 @@ def setup(request, browser):
     # driver.maximize_window()
     request.cls.driver = driver
     yield
+    driver.quit()
 
 
 def pytest_addoption(parser):

@@ -1,0 +1,270 @@
+1719322545135	geckodriver	INFO	Listening on 127.0.0.1:64104
+1719322548134	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64105" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\TEJ~1.PRA\\AppData\\Local\\Temp\\rust_mozprofilewWRw9F"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719322549124	Marionette	INFO	Marionette enabled
+1719322549651	Marionette	INFO	Listening on port 64112
+WebDriver BiDi listening on ws://127.0.0.1:64105
+Read port: 64112
+1719322550230	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64105/devtools/browser/de34c13a-54a0-4c80-96ce-32c8ce2b0f9f
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfn042, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfn042, line 153: TypeError: $(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.com/, line 567: SyntaxError: missing ] after element list
+JavaScript note: https://www.faircent.com/, line 567: [ opened at line 567, column 5171
+JavaScript error: https://www.faircent.com/, line 18: uncaught exception: Error: invalid version specified
+JavaScript error: https://js-agent.newrelic.com/nr-spa-1.260.1.min.js, line 2: TypeError: this.agentRuntime.session is undefined
+JavaScript warning: https://www.faircent.com/, line 18: Script terminated by timeout at:
+emit@https://www.faircent.com/:18:9732
+emit@https://www.faircent.com/:18:9779
+i@https://www.faircent.com/:18:17950
+nrWrapper@https://www.faircent.com/:18:17778
+si@https://www.clarity.ms/s/0.7.32/clarity.js:2:56553
+wi@https://www.clarity.ms/s/0.7.32/clarity.js:2:57211
+zi@https://www.clarity.ms/s/0.7.32/clarity.js:2:61478
+Gn@https://www.clarity.ms/s/0.7.32/clarity.js:2:30490
+oi/<@https://www.clarity.ms/s/0.7.32/clarity.js:2:56206
+nrWrapper@https://www.faircent.com/:18:17817
+
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfn042, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfn042, line 153: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-select.min.js?sfn042, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-datetimepicker.js?sfn042, line 1874: TypeError: $(...).on is not a function
+JavaScript warning: https://www.youtube.com/s/player/84314bef/www-embed-player.vflset/www-embed-player.js, line 904: Script terminated by timeout at:
+fl/<@https://www.youtube.com/s/player/84314bef/www-embed-player.vflset/www-embed-player.js:904:47
+
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/bootstrap.min.js?sfn042, line 7: TypeError: a(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.faircent.in."
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfn042, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfn042, line 153: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-select.min.js?sfn042, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-datetimepicker.js?sfn042, line 1874: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/bootstrap.min.js?sfn042, line 7: TypeError: a(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 8: TypeError: $(...).dlmenu is not a function
+JavaScript error: https://www.faircent.in/lender/mlp/investview, line 18: uncaught exception: Error: invalid version specified
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.faircent.in."
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfn042, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfn042, line 153: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-select.min.js?sfn042, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-datetimepicker.js?sfn042, line 1874: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/bootstrap.min.js?sfn042, line 7: TypeError: a(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 8: TypeError: $(...).dlmenu is not a function
+JavaScript error: https://www.faircent.in/fsigp/investView, line 18: uncaught exception: Error: invalid version specified
+1719322579140	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfn042, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfn042, line 153: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-select.min.js?sfn042, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-datetimepicker.js?sfn042, line 1874: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/bootstrap.min.js?sfn042, line 7: TypeError: a(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 8: TypeError: $(...).dlmenu is not a function
+JavaScript error: https://www.faircent.in/lender/mlp/investview, line 18: uncaught exception: Error: invalid version specified
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+1719322662317	Marionette	INFO	Stopped listening on port 64112
+Dynamically enable window occlusion 1
+1719395366893	geckodriver	INFO	Listening on 127.0.0.1:49174
+1719395370079	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49175" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\TEJ~1.PRA\\AppData\\Local\\Temp\\rust_mozprofilex7ajIO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719395371737	Marionette	INFO	Marionette enabled
+1719395372263	Marionette	INFO	Listening on port 49185
+WebDriver BiDi listening on ws://127.0.0.1:49175
+Read port: 49185
+1719395372982	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49175/devtools/browser/813d8e75-0f1a-4bcd-867e-a8418a835d91
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfojo1, line 153: TypeError: $(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.com/, line 567: SyntaxError: missing ] after element list
+JavaScript note: https://www.faircent.com/, line 567: [ opened at line 567, column 5171
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/, line 18: uncaught exception: Error: invalid version specified
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript warning: https://www.faircent.com/, line 18: Script terminated by timeout at:
+emit@https://www.faircent.com/:18:9828
+emit@https://www.faircent.com/:18:9779
+i@https://www.faircent.com/:18:17950
+nrWrapper@https://www.faircent.com/:18:17877
+
+JavaScript warning: https://www.youtube.com/s/player/61b3b5e4/www-embed-player.vflset/www-embed-player.js, line 919: Script terminated by timeout at:
+wl/<@https://www.youtube.com/s/player/61b3b5e4/www-embed-player.vflset/www-embed-player.js:919:47
+
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfojo1, line 153: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-datetimepicker.js?sfojo1, line 1874: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/bootstrap.min.js?sfojo1, line 7: TypeError: a(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.faircent.in."
+1719395401846	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfojo1, line 153: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-datetimepicker.js?sfojo1, line 1874: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/bootstrap.min.js?sfojo1, line 7: TypeError: a(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1719395407721	Marionette	INFO	Stopped listening on port 49185
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 8: TypeError: $(...).dlmenu is not a function
+Dynamically enable window occlusion 1
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:107:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:912:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:817:38
+
+console.warn: services.settings: main/addons-manager-settings sync interrupted by shutdown
+console.warn: services.settings: main/query-stripping sync interrupted by shutdown
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+console.warn: services.settings: main/translations-wasm sync interrupted by shutdown
+console.warn: services.settings: main/search-config-icons sync interrupted by shutdown
+console.warn: services.settings: main/search-config-overrides sync interrupted by shutdown
+console.warn: services.settings: main/search-default-override-allowlist sync interrupted by shutdown
+console.warn: services.settings: main/search-config-overrides-v2 sync interrupted by shutdown
+console.warn: services.settings: main/search-config sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/content-relevance getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1719395482406	geckodriver	INFO	Listening on 127.0.0.1:49363
+1719395485538	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49364" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\TEJ~1.PRA\\AppData\\Local\\Temp\\rust_mozprofileNbdeIz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1719395486972	Marionette	INFO	Marionette enabled
+1719395487587	Marionette	INFO	Listening on port 49371
+Read port: 49371
+WebDriver BiDi listening on ws://127.0.0.1:49364
+1719395487857	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49364/devtools/browser/6215a1f4-947f-4125-9baf-53391593a1cc
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfojo1, line 153: TypeError: $(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.com/, line 567: SyntaxError: missing ] after element list
+JavaScript note: https://www.faircent.com/, line 567: [ opened at line 567, column 5171
+JavaScript error: https://www.faircent.com/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.com/, line 18: uncaught exception: Error: invalid version specified
+JavaScript warning: https://www.faircent.com/, line 18: Script terminated by timeout at:
+nrWrapper@https://www.faircent.com/:18:17667
+
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfojo1, line 153: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-datetimepicker.js?sfojo1, line 1874: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/bootstrap.min.js?sfojo1, line 7: TypeError: a(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript warning: https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval line 5991 > eval line 1 > eval line 1 > eval, line 1: Script terminated by timeout at:
+z@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval line 5991 > eval line 1 > eval line 1 > eval:1:24
+M@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval line 5991 > eval line 1 > eval line 1 > eval:1:49
+A0@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval line 5991 > eval line 1 > eval line 1 > eval:1:25
+@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval line 5991 > eval line 1 > eval line 1 > eval:1:17
+Nj@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval line 5991 > eval line 1 > eval line 1 > eval:1:229
+J0@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval line 5991 > eval line 1 > eval line 1 > eval:1:49
+@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval:5991:48751
+rX@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval:5991:30305
+w@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval:5991:14533
+B@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval:5991:152
+Fg@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval line 5991 > eval line 1 > eval line 1 > eval:1:198
+n.BW@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval:5991:47872
+a@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval:5991:8310
+Hq.awP_/<@https://www.google.com/js/th/EirmVnnNlSgqRyHN1YLvHhRw11SWUqUPb76JYHphonQ.js line 2 > eval:5991:51687
+Ro.prototype.V1@https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js:8339:120
+bH.prototype.r3@https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js:9455:42
+g.k.invoke@https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js:9448:64
+VPa@https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js:4201:47
+g.ZPa/a.c1a@https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js:4206:277
+g.$Pa@https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js:4209:168
+g.k.bM@https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js:13188:261
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js:13069:107
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js:11099:62
+kT/a.state.B[b]@https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js:5049:53
+cy/<@https://www.youtube.com/s/player/61b3b5e4/www-embed-player.vflset/www-embed-player.js:1895:106
+oy@https://www.youtube.com/s/player/61b3b5e4/www-embed-player.vflset/www-embed-player.js:1931:46
+@https://www.youtube.com/s/player/61b3b5e4/www-embed-player.vflset/www-embed-player.js:1939:137
+wl/<@https://www.youtube.com/s/player/61b3b5e4/www-embed-player.vflset/www-embed-player.js:919:63
+
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.faircent.in."
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfojo1, line 153: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-datetimepicker.js?sfojo1, line 1874: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/bootstrap.min.js?sfojo1, line 7: TypeError: a(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 8: TypeError: $(...).dlmenu is not a function
+JavaScript error: https://www.faircent.in/lender/mlp/investview, line 18: uncaught exception: Error: invalid version specified
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.faircent.in."
+1719395517004	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfojo1, line 153: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-datetimepicker.js?sfojo1, line 1874: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/bootstrap.min.js?sfojo1, line 7: TypeError: a(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 8: TypeError: $(...).dlmenu is not a function
+JavaScript error: https://www.faircent.in/fsigp/investView, line 18: uncaught exception: Error: invalid version specified
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/cheque_management/js/bootstrap-datetimepicker.js?sfojo1, line 153: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-select.min.js?sfojo1, line 7: TypeError: a(...).data(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/modules/ops_dashboard/new_ops_dashboard/js/bootstrap-datetimepicker.js?sfojo1, line 1874: TypeError: $(...).on is not a function
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/bootstrap.min.js?sfojo1, line 7: TypeError: a(...).on is not a function
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 8: TypeError: $(...).dlmenu is not a function
+JavaScript error: https://www.faircent.in/lender/mlp/investview, line 18: uncaught exception: Error: invalid version specified
+JavaScript error: https://www.faircent.in/sites/all/themes/media-responsive-theme/js/custom_page_tpl.js, line 9: TypeError: ddm is null
+1719395605272	Marionette	INFO	Stopped listening on port 49371
+JavaScript warning: https://www.faircent.in/lender/mlp/investview, line 18: Script terminated by timeout at:
+nrWrapper@https://www.faircent.in/lender/mlp/investview:18:17667
+
+Dynamically enable window occlusion 1
