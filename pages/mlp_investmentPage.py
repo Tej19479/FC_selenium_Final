@@ -64,7 +64,7 @@ class Lend:
     def click_lend(self):
         self.driver.find_element(*self.click_lend_button).click()
 
-    def use_escrow(self, use: bool):
+    def use_escrow_mlp(self, use: bool):
         checkbox = self.driver.find_element(*self.use_escrow_checkbox)
         if use and not checkbox.is_selected():
             checkbox.click()

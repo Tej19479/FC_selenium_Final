@@ -15,7 +15,7 @@ class TestLogin:
 
     def test_login(self):
         home_page = Homepage(self.driver)
-        home_page.open_page("https://www.faircent.com/")
+        home_page.open_page("https://cron.faircent.com/")
         home_page.log_button()
         # home_page.enter_username("mustaques786@gmail.com")  more12@yopmail.com
         home_page.enter_username("Tej.pratap@faircent.com")
@@ -41,9 +41,9 @@ class TestLogin:
         time.sleep(5)
 
         home_page.mlp_enter_investment_amount(25000)
-        time.sleep(50)
-
-        # home_page.submit_investment()
+        time.sleep(5)
+        home_page.use_escrow_mlp(True)
+        home_page.submit_investment()
         # time.sleep(20)
         # locator = (By.XPATH, "//a[text()='LENDING OVERVIEW ']")
         # home_page.mlp_lender_overview_screen()
