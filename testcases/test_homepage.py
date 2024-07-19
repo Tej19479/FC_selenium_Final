@@ -15,11 +15,11 @@ class TestLogin:
 
     def test_login(self):
         home_page = Homepage(self.driver)
-        home_page.open_page("https://cron.faircent.com/")
+        home_page.open_page("https://www.faircent.in/")
         home_page.log_button()
         # home_page.enter_username("mustaques786@gmail.com")  more12@yopmail.com
         home_page.enter_username("Tej.pratap@faircent.com")
-        home_page.enter_password("Tej@123")
+        home_page.enter_password("Tej@1234")
         home_page.click_login()
         home_page.Lend_Screen_click()
 

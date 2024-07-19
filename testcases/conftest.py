@@ -1,69 +1,43 @@
 import pytest
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
-import requests
-import pytest
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.edge.service import Service as EdgeService
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
-from selenium.webdriver.chrome.options import Options
 import os
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-
 driver = None
 
 
-# @pytest.fixture(scope="class")
-# def driver(request):
-#     # Initialize the WebDriver
-#     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-#     print("Called driver:", driver)
-#
-#     # Set implicit wait
-#     driver.implicitly_wait(10)
-#
-#     # Provide the WebDriver instance to test classes
-#     request.cls.driver = driver
-#
-#     # Teardown - close the WebDriver
-#     yield driver
-#     driver.close()
-
-#
-@pytest.fixture(autouse=True, scope="class")
+@pytest.fixture(scope="class", autouse=True)
 def setup(request, browser):
-    print("rrrrrrrrrrrrrrrr", browser)
     global driver
     if browser == "chrome":
         options = webdriver.ChromeOptions()
-        options.add_argument("--start-maximized")  # Optional: maximize browser window
-        options.add_argument("--disable-extensions")  # Optional: disable extensions
+        options.add_argument("--start-maximized")
+        options.add_argument("--disable-extensions")
         driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
-
         print("Chrome launched")
     elif browser == "firefox":
         driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
-        print("firefox")
+        print("Firefox launched")
     elif browser == "edge":
         driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
-        print("lunch edge")
-    # #driver.get(url)
-    # driver.maximize_window()
+        print("Edge launched")
+
     request.cls.driver = driver
     yield
     driver.quit()
 
 
 def pytest_addoption(parser):
-    parser.addoption("--browser")
+    parser.addoption(
+        "--browser", action="store", default="chrome", help="browser option: chrome, edge, or firefox")
+    parser.addoption("--url", action="store", default="http://qclend1.faircent.com", help="url to test")
 
 
 @pytest.fixture(scope="class", autouse=True)
@@ -76,7 +50,28 @@ def url(request):
     return request.config.getoption("--url")
 
 
-def pytest_addoption(parser):
-    parser.addoption(
-        "--browser", action="store", default="chrome", help="browser option: chrome, edge, or firefox")
-    parser.addoption("--url")
+@pytest.mark.hookwrapper
+def pytest_runtest_makereport(item, call):
+    pytest_html = item.config.pluginmanager.getplugin('html')
+    outcome = yield
+    report = outcome.get_result()
+    extra = getattr(report, 'extra', [])
+
+    if report.when == 'call':
+        global driver
+        current_url = driver.current_url
+        extra.append(pytest_html.extras.url(current_url))
+
+        xfail = hasattr(report, 'wasxfail')
+
+        if (report.skipped and xfail) or (report.failed and not xfail):
+            screenshot_path = os.path.join(os.getcwd(), 'screenshots', f'{item.name}.png')
+            os.makedirs(os.path.dirname(screenshot_path), exist_ok=True)
+            driver.save_screenshot(screenshot_path)
+            extra.append(pytest_html.extras.html('<div>Additional HTML</div>'))
+            extra.append(pytest_html.extras.image(screenshot_path))
+
+            #here save report and broser name and testcasename
+        extra.append(pytest_html.extras.text(f"Test case: {item.name}"))
+        extra.append(pytest_html.extras.text(f"Browser: {item.config.getoption('--browser')}"))
+        report.extra = extra
