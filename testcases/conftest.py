@@ -14,7 +14,7 @@ driver = None
 
 
 @pytest.fixture(scope="class", autouse=True)
-def setup(request, browser):
+def setup(request, browser,url):
     global driver
     if browser == "chrome":
         options = webdriver.ChromeOptions()
@@ -28,7 +28,7 @@ def setup(request, browser):
     elif browser == "edge":
         driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
         print("Edge launched")
-
+    driver.get(url)
     request.cls.driver = driver
     yield
     driver.quit()
