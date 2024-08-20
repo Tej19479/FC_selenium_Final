@@ -1,0 +1,94 @@
+ pipeline {
+    agent any
+
+    environment {
+        submitter = 'Tej19479'
+        timeoutmins = '3'  // Timeout set to 3 minutes
+    }
+
+    stages {
+        stage('Notify and Wait for Input') {
+            steps {
+                script {
+                    // Wrap to capture the build user's email
+                    wrap([$class: 'BuildUser']) {
+                        def buildUserEmail = env.BUILD_USER_EMAIL
+                        def BUILDUSER =env.BUILD_USER
+                        // Define the notification message
+                        def notificationMessage = """
+                            Hi ${BUILDUSER},
+                            we have make bluid
+                            An input request has been sent.
+                            Build Number: ${env.BUILD_NUMBER}
+                            Job Name: ${env.JOB_NAME}
+                            Build URL: ${env.BUILD_URL}
+
+                            Please confirm whether to proceed with raising the pull request to the master branch.
+                            You can respond to the input request here: ${env.BUILD_URL}input/
+                        """
+
+                        // Send the notification email to the build user
+                        sendnotification(notificationMessage, buildUserEmail)
+
+                        // Log to console
+                        echo "Notification sent to ${buildUserEmail} with input request. Waiting for user confirmation."
+                    }
+                }
+            }
+        }
+
+        stage('Wait for Input Confirmation') {
+            steps {
+                script {
+                    try {
+                        // Convert timeoutmins from the environment to a float value (in minutes)
+                        def timeoutValue = env.timeoutmins as float
+
+                        timeout(time: timeoutValue, unit: 'MINUTES') {
+                            // Prompt for user input
+                            def submitBy = input message: 'Confirm after staging testing done, proceed with raising pull request to master branch from staging?',
+                                                 ok: 'Proceed',
+                                                 submitter: "${env.submitter}",
+                                                 submitterParameter: 'submittedBy'
+
+                            // Log input confirmation
+                            echo "Input received from user: ${submitBy}"
+
+                            // Send confirmation email to the build user
+                            wrap([$class: 'BuildUser']) {
+                                def buildUserEmail = env.BUILD_USER_EMAIL
+                                def BUILDUSER =env.BUILD_USER
+
+                                def confirmationMessage = """
+                                    Dear ${BUILDUSER} ,
+                                    Staging testing confirmed.
+                                    Build Number: ${env.BUILD_NUMBER}
+                                    Job Name: ${env.JOB_NAME}
+                                    Build URL: ${env.BUILD_URL}
+                                    Submitted by: ${submitBy}
+                                """
+                                sendnotification(confirmationMessage, buildUserEmail)
+                                echo "Confirmation sent to ${buildUserEmail}. Proceeding with the pipeline."
+                            }
+                        }
+                    } catch (org.jenkinsci.plugins.workflow.steps.FlowInterruptedException e) {
+                        echo "Input step was aborted"
+                        mail bcc: '', body: 'The input step was aborted.', cc: '', from: '', replyTo: '', subject: 'Input Aborted', to: 'tej.pratap@faircent.com'
+                        currentBuild.result = 'ABORTED'
+                        error("Build was aborted")
+                    }
+                }
+            }
+        }
+    }
+}
+
+def sendnotification(String message, String recipientEmail){
+    mail bcc: '',
+         body: """ ${message}""",
+         cc: '',
+         from: '',
+         replyTo: '',
+         subject: 'Automation Testing Notification',
+         to: recipientEmail
+}
