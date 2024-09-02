@@ -1,0 +1,90 @@
+pipeline {
+ agent { label "window" }
+    environment {
+        PYTHON_PATH = 'C:\\Users\\tej.pratap\\AppData\\Local\\Programs\\Python\\Python310'
+         GIT_PATH = 'C:\\Users\\Tej.pratap\\AppData\\Local\\Programs\\Git\\bin' // Adjust this path to where git.exe is located
+          BUILD_TAG = "${env.BUILD_TAG}"
+    }
+    parameters{
+         choice(
+            name: 'BROWSER',
+            choices: ['chrome', 'firefox', 'edge'],
+            description: 'Select the browser to open'
+        )
+           string(
+        name: 'TestingWebsiteURL',
+        defaultValue: 'https://www.faircent.in/',
+        description: 'Enter the testing url.'
+    )
+     string(
+        name: 'reportname',
+        defaultValue: 'testing.html',
+        description: 'Enter the report name.'
+    )
+    }
+
+
+
+    stages {
+        stage('Set up Environment') {
+            steps {
+                script {
+                    env.PATH = "${env.GIT_PATH};${env.PYTHON_PATH};${env.PYTHON_PATH}\\Scripts;${env.PATH}"
+                }
+            }
+        }
+        stage('merge branch'){
+
+        }
+        stage('Git Checkout') {
+            steps {
+                dir("${WORKSPACE}") {
+                    bat 'git --version' // To verify if git is accessible
+                    git branch: 'master', url: 'https://github.com/Tej19479/FC_selenium_Final.git'
+                    bat '''
+                        git branch --set-upstream-to=origin/master master
+                        git pull origin master
+                    '''
+                    echo "Build tag: ${BUILD_TAG}"
+                }
+            }
+        }
+
+        stage('Create Virtual Environment') {
+            steps {
+                dir("${WORKSPACE}") {
+                    bat '''
+                        python -m venv venv
+                    '''
+                }
+            }
+        }
+
+        stage('Install Requirements') {
+            steps {
+                dir("${WORKSPACE}") {
+                    bat '''
+                        call venv\\Scripts\\activate
+                        python -m pip install --upgrade pip
+                        pip install -r requirements.txt
+                    '''
+                }
+            }
+        }
+
+
+        stage('RUN TESTCASES'){
+          steps{
+            dir("${WORKSPACE}"){
+            echo "Selected browser: ${params.BROWSER}"
+            echo "testing url given: ${params.TestingWebsiteURL}"
+                    bat """
+                        python -m pytest testcases\\test_homepage.py --browser=${params.BROWSER} --url=${params.TestingWebsiteURL} --html=report/report_${params.reportname}  --capture=no
+                    """
+            }
+          }
+        }
+
+    }
+
+}
