@@ -22,111 +22,21 @@ class TestManualWithdrawn:
         home_page.click_login()
         # Open the manual withdrawal page in a new tab
         withdrawal_data = [
-            {
-                "investment_id": 1000015017,
-                "uid": 120820,
-                "amount": 56347.54
-            },
-            {
-                "investment_id": 1000068199,
-                "uid": 560889,
-                "amount": 384602.21
-            },
-            {
-                "investment_id": 1000104264,
-                "uid": 828421,
-                "amount": 1932.77
-            },
-            {
-                "investment_id": 1000117710,
-                "uid": 1073933,
-                "amount": 62269.13
-            },
-            {
-                "investment_id": 1000165881,
-                "uid": 3535961,
-                "amount": 110959.43
-            },
-            {
-                "investment_id": 1000170071,
-                "uid": 3674105,
-                "amount": 110959.43
-            },
-            {
-                "investment_id": 1000176216,
-                "uid": 3842496,
-                "amount": 401754.14
-            },
-            {
-                "investment_id": 1000176462,
-                "uid": 3847934,
-                "amount": 105863.01
-            },
-            {
-                "investment_id": 1000179436,
-                "uid": 3919305,
-                "amount": 118783.2
-            },
-            {
-                "investment_id": 1000181940,
-                "uid": 4000686,
-                "amount": 125269.42
-            },
-            {
-                "investment_id": 1000183354,
-                "uid": 4054814,
-                "amount": 137876.71
-            },
-            {
-                "investment_id": 1000184556,
-                "uid": 4090845,
-                "amount": 137876.71
-            },
-            {
-                "investment_id": 1000186483,
-                "uid": 4168567,
-                "amount": 464942.86
-            },
-            {
-                "investment_id": 1000199861,
-                "uid": 4418740,
-                "amount": 81534.25
-            },
-            {
-                "investment_id": 1000201963,
-                "uid": 4432881,
-                "amount": 44728.76
-            },
-            {
-                "investment_id": 1000202033,
-                "uid": 4433635,
-                "amount": 28032.88
-            },
-            {
-                "investment_id": 1000207251,
-                "uid": 4471550,
-                "amount": 10136.99
-            },
-            {
-                "investment_id": 1000231606,
-                "uid": 4635564,
-                "amount": 108493.15
-            },
-            {
-                "investment_id": 1000252950,
-                "uid": 4799647,
-                "amount": 89268.49
-            },
-            {
-                "investment_id": 1000254761,
-                "uid": 4817960,
-                "amount": 87452.06
-            },
-            {
-                "investment_id": 1000259311,
-                "uid": 4875207,
-                "amount": 78345.21
-            }
+            {"uid": 4740445, "investment_id": 1000246893, "amount": 71506.86},
+            {"uid": 4789807, "investment_id": 1000251254, "amount": 85150.68},
+            {"uid": 4804387, "investment_id": 1000253356, "amount": 88767.12},
+            {"uid": 4820695, "investment_id": 1000254997, "amount": 55561.65},
+            {"uid": 4843276, "investment_id": 1000256127, "amount": 86136.99},
+            {"uid": 5102848, "investment_id": 1000283467, "amount": 59835.61},
+            {"uid": 5205229, "investment_id": 1000293660, "amount": 46356.16},
+            {"uid": 5253242, "investment_id": 1000297451, "amount": 40767.12},
+            {"uid": 5374934, "investment_id": 1000304232, "amount": 26630.14},
+            {"uid": 5403152, "investment_id": 1000306334, "amount": 26301.37},
+            {"uid": 5407841, "investment_id": 1000306942, "amount": 26301.36},
+            {"uid": 5480926, "investment_id": 1000314017, "amount": 12602.74},
+            {"uid": 5488179, "investment_id": 1000314392, "amount": 12821.92},
+            {"uid": 5567031, "investment_id": 1000319499, "amount": 4602.74},
+
         ]
 
         # Open the manual withdrawal page in a new tab and perform the tasks
@@ -184,5 +94,4 @@ class TestManualWithdrawn:
             withdrawn_submit.click()
         else:
             checkbox.click()
-            time.sleep(10)
             withdrawn_submit.click()
