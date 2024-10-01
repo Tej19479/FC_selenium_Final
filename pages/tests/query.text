@@ -1,0 +1,6 @@
+'''SELECT CONCAT('{"uid":', uid,
+              ',"investment_id":', unique_user_id,
+              ',"amount":', (wallet - locked_amount), '},') AS result
+FROM cent_virtual_account
+WHERE unique_user_id IN (1000301775, 1000068387, 1000147169, 1000147168)
+  AND (wallet - locked_amount) > 0;'''
